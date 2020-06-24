@@ -214,12 +214,42 @@ body{
 
 .header{
   width: 100vw;
+  height: 8vh;
+  margin-bottom: 2%;
   &__logo{
     position: relative;
     width:5rem;  
     top: 50%;
     left: 45%;
+    @media(min-width:768px){
+      display: none;
+    }
   }
+
+  &__elems{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-top: 2%;
+    font-size: 18px;
+  }
+}
+.name{
+  display: flex;
+  align-items: center;
+  width: 30rem;
+  &__stroke{
+    margin-left: 2%;
+    border-top: 1px solid #000;
+    width : 200px;
+  }
+}
+.about{
+  width: 14rem;
+  display: flex;
+  justify-content: space-between;
+  font-size: 18px;
 }
 
 .more{
@@ -241,10 +271,18 @@ body{
     width: 30rem;
   }
 
+  &__title{
+    @media(min-width:768px){
+      font-size: 48px;
+      width: 40rem;
+    }
+  }
+
   &__body{
     margin-top: 10%;
     @media(min-width:768px){
       margin-top: 5%;
+      font-size: 18px;
     }
   }
 
@@ -256,6 +294,19 @@ body{
     border: none;
     margin-top: 5%;
     width: 200px;
+  }
+
+  &__number{
+    position: absolute;
+    top: 145%;
+    left: 35%;
+    color: #A8A8A8;
+    opacity: 100%;
+    z-index: -1;
+    opacity: 20%;
+    font-weight: bold;
+    font-size: 288px;
+    font-family: Arial, Helvetica, sans-serif;
   }
 }
 
