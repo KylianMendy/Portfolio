@@ -75,10 +75,16 @@ const $text = document.getElementById('text');
 
 const $button = document.getElementById('button');
 
-const $img = document.getElementById('img');
+const $img = document.getElementById('image');
 
 
 //objets projets 
+
+
+import colorsImg from '../img/COLOR-gif.svg'
+import moodeImg from '../img/gif_moode.png';
+import soranimImg from '../img/soranim_gif.png';
+import nikeImg from '../img/nike_gif.png';
 
 let number = 1 ;
 
@@ -108,7 +114,7 @@ const $infos = [
 ];
 
 let $colors = ['#A1DBC2','#F5D5C6','#922C44','#343538']
-
+let $changepic = [{img:colorsImg},{img:colorsImg},{img:moodeImg},{img:soranimImg},{img:nikeImg}]
 
 // console.log($infos);
 
@@ -118,6 +124,10 @@ function changeContent(){
   $text.innerHTML = $infos[number].text;
   $button.style.backgroundColor= $colors[number];
   number++;
+  $img.setAttribute ("src",$changepic[number].img);
+  }
+  else{
+    number = 0
   }
 }
 
