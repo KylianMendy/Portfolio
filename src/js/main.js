@@ -81,7 +81,7 @@ const $img = document.getElementById('image');
 //objets projets 
 
 
-import colorsImg from '../img/COLOR-gif.svg'
+import colorsImg from '../img/Color-gif.svg'
 import moodeImg from '../img/gif_moode.png';
 import soranimImg from '../img/soranim_gif.png';
 import nikeImg from '../img/nike_gif.png';
