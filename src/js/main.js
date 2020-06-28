@@ -67,81 +67,91 @@ function jump(callback) {
 
 //text changeant pour les diff projets
 
-const $info = document.querySelector('.info-project');
+// const $info = document.querySelector('.info-project');
 
-const $title = document.getElementById('title');
+// const $title = document.getElementById('title');
 
-const $text = document.getElementById('text');
+// const $text = document.getElementById('text');
 
-const $button = document.getElementById('button');
+// const $button = document.getElementById('button');
 
-const $img = document.getElementById('image');
+// const $img = document.getElementById('image');
+
+// const $link = document.getElementById('link');
 
 
-//objets projets 
+// //objets projets 
 
 
-import colorsImg from '../img/Color-gif.svg'
-import moodeImg from '../img/gif_moode.png';
-import soranimImg from '../img/soranim_gif.png';
-import nikeImg from '../img/nike_gif.png';
+// import colorsImg from '../img/Color-gif.svg'
+// import moodeImg from '../img/gif_moode.png';
+// import soranimImg from '../img/soranim_gif.png';
+// import nikeImg from '../img/nike_gif.png';
 
-let number = 1 ;
+// let number = 1 ;
 
-const $infos = [
-  {
-    title:'Colors App',
-    text:'Blabla sur Colors. You can find a variety of artist with their performances in the colors studio. The app send the users on youtube video for listening songs and resume briefly the artist career . (change 1)',
-    color:'F5D5C6',
-  },
-  {
-  title:'Moode Project',
-  text:'Blabla sur moode. You can find a variety of artist with their performances in the colors studio. The app send the users on youtube video for listening songs and resume briefly the artist career . (change 1)',
-  color:'F5D5C6',
-},
+// const $infos = [
+//   {
+//     title:'Colors App',
+//     text:'Blabla sur Colors. You can find a variety of artist with their performances in the colors studio. The app send the users on youtube video for listening songs and resume briefly the artist career . (change 1)',
+//     color:'F5D5C6',
+//     link:'https://colorsappid.netlify.app/home.html',
+//   },
+//   {
+//   title:'Moode Project',
+//   text:'Blabla sur moode. You can find a variety of artist with their performances in the colors studio. The app send the users on youtube video for listening songs and resume briefly the artist career . (change 1)',
+//   color:'F5D5C6',
+//   link:'https://moode.netlify.app/index.html',
+// },
 
-  {
-  title : 'Soranim project',
-  text:'blabla sur soranim. You can find a variety of artist with their performances in the colors studio. The app send the users on youtube video for listening songs and resume briefly the artist career . (change 2)',
-  color:'922C44',
-},
+//   {
+//   title : 'Soranim project',
+//   text:'blabla sur soranim. You can find a variety of artist with their performances in the colors studio. The app send the users on youtube video for listening songs and resume briefly the artist career . (change 2)',
+//   color:'922C44',
+//   link:'https://github.com/tlugat/Soranime',
+// },
 
-  {
-  title :'Nike SB Travis Scott design',
-  text:'blabla sur travis The app send the users on youtube video for listening songs and resume briefly the artist career . (change 3)',
-  color:'343538',
-}
-];
+//   {
+//   title :'Nike SB Travis Scott design',
+//   text:'blabla sur travis The app send the users on youtube video for listening songs and resume briefly the artist career . (change 3)',
+//   color:'343538',
+//   link:'https://www.figma.com/proto/Cd170ESuU9iQTY2qjmyxhg/Travis-SB-Design?node-id=0%3A1',
+// }
+// ];
 
-let $colors = ['#A1DBC2','#F5D5C6','#922C44','#343538']
-let $changepic = [{img:colorsImg},{img:colorsImg},{img:moodeImg},{img:soranimImg},{img:nikeImg}]
+// let $colors = ['#A1DBC2','#F5D5C6','#922C44','#343538']
+// let $changepic = [{img:colorsImg},{img:colorsImg},{img:moodeImg},{img:soranimImg},{img:nikeImg}]
 
-// console.log($infos);
+// let $href = [{link:'https://colorsappid.netlify.app/home.html'},{link:'https://colorsappid.netlify.app/home.html'},{link:'https://moode.netlify.app/index.html'},{link:'https://github.com/tlugat/Soranime'},{link:'https://www.figma.com/proto/Cd170ESuU9iQTY2qjmyxhg/Travis-SB-Design?node-id=0%3A1'}]
 
-function changeContent(){
-  if(number<4){
-  $title.innerHTML = $infos[number].title ;
-  $text.innerHTML = $infos[number].text;
-  $button.style.backgroundColor= $colors[number];
-  number++;
-  $img.setAttribute ("src",$changepic[number].img);
-  }
-  else{
-    number = 0
-  }
-}
+// // console.log($infos);
 
-function changeContent2(){
-  if(number>0){
-  number--;
-  $title.innerHTML = $infos[number].title ;
-  $text.innerHTML = $infos[number].text;
-  $button.style.backgroundColor= $colors[number];
-  }
-}
+// function changeContent(){
+//   if(number<4){
+//   $title.innerHTML = $infos[number].title ;
+//   $text.innerHTML = $infos[number].text;
+//   $button.style.backgroundColor= $colors[number];
+//   number++;
+//   $link.setAttribute = ("href",$href[number].link);
+//   $img.setAttribute ("src",$changepic[number].img);
+//   }
+//   else{
+//     number = 0
+//   }
+// }
 
-$rightArrow.addEventListener("click", changeContent);
-$leftArrow.addEventListener("click",changeContent2)
+// function changeContent2(){
+//   if(number>0){
+//   number--;
+//   $title.innerHTML = $infos[number].title ;
+//   $text.innerHTML = $infos[number].text;
+//   $button.style.backgroundColor= $colors[number];
+//   $img.setAttribute ("src",$changepic[number].img);
+//   }
+// }
+
+// $rightArrow.addEventListener("click", changeContent);
+// $leftArrow.addEventListener("click",changeContent2)
 
 
 //Animation
