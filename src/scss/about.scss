@@ -1,0 +1,91 @@
+.content{
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20%;
+  @media (min-width:768px) {
+    flex-direction: row;
+    margin-top: 0%;
+    align-items: center;
+  }
+}
+
+.text{
+  width: 40rem;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-left: 5%;
+  @media (min-width:768px) {
+    margin-left: 20%;
+  }
+  h1{
+    color: #6DA0A4;
+    font-size: 40px;
+  }
+  h2{
+    margin-bottom: 10%;
+    font-size: 20px;
+    font-weight: lighter;
+    @media (min-width:768px) {
+      margin-bottom: 5%;
+    }
+  }
+
+  &__aboutme{
+    margin-bottom: 10%;
+    width: 32rem;
+    @media (min-width:768px) {
+      margin-bottom: 5%;
+    }
+  }
+
+  &__skills{
+    width: 100vw;
+    @media (min-width:768px) {
+      width: 40rem;
+    }
+    h3{
+      color: #6DA0A4;
+      margin-bottom: 5%;
+    }
+  }
+
+  &__comp{
+    display: flex;
+
+    li{
+      list-style: none;
+    }
+    &--secndcomp{
+      margin-left: 10%;
+    }
+  }
+
+  &__logos{
+    width: 12rem;
+    margin-top: 10%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.pic{
+  width: 12rem;
+  padding-right: 10%;
+  align-items: center;
+  &__me{
+    margin-left: 40%;
+    margin-top: 10%;
+    @media (min-width:768px) {
+      margin-left: 0%;
+      width: 342px;
+      height: 415px;
+      margin-top: 0%;
+    }
+    &--polygon{
+      position: relative;
+      z-index: -1;
+      left: 40%;
+      bottom: 45%;
+    }
+  }
+}

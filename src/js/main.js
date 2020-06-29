@@ -65,94 +65,6 @@ function jump(callback) {
   });
 }
 
-//text changeant pour les diff projets
-
-// const $info = document.querySelector('.info-project');
-
-// const $title = document.getElementById('title');
-
-// const $text = document.getElementById('text');
-
-// const $button = document.getElementById('button');
-
-// const $img = document.getElementById('image');
-
-// const $link = document.getElementById('link');
-
-
-// //objets projets 
-
-
-// import colorsImg from '../img/Color-gif.svg'
-// import moodeImg from '../img/gif_moode.png';
-// import soranimImg from '../img/soranim_gif.png';
-// import nikeImg from '../img/nike_gif.png';
-
-// let number = 1 ;
-
-// const $infos = [
-//   {
-//     title:'Colors App',
-//     text:'Blabla sur Colors. You can find a variety of artist with their performances in the colors studio. The app send the users on youtube video for listening songs and resume briefly the artist career . (change 1)',
-//     color:'F5D5C6',
-//     link:'https://colorsappid.netlify.app/home.html',
-//   },
-//   {
-//   title:'Moode Project',
-//   text:'Blabla sur moode. You can find a variety of artist with their performances in the colors studio. The app send the users on youtube video for listening songs and resume briefly the artist career . (change 1)',
-//   color:'F5D5C6',
-//   link:'https://moode.netlify.app/index.html',
-// },
-
-//   {
-//   title : 'Soranim project',
-//   text:'blabla sur soranim. You can find a variety of artist with their performances in the colors studio. The app send the users on youtube video for listening songs and resume briefly the artist career . (change 2)',
-//   color:'922C44',
-//   link:'https://github.com/tlugat/Soranime',
-// },
-
-//   {
-//   title :'Nike SB Travis Scott design',
-//   text:'blabla sur travis The app send the users on youtube video for listening songs and resume briefly the artist career . (change 3)',
-//   color:'343538',
-//   link:'https://www.figma.com/proto/Cd170ESuU9iQTY2qjmyxhg/Travis-SB-Design?node-id=0%3A1',
-// }
-// ];
-
-// let $colors = ['#A1DBC2','#F5D5C6','#922C44','#343538']
-// let $changepic = [{img:colorsImg},{img:colorsImg},{img:moodeImg},{img:soranimImg},{img:nikeImg}]
-
-// let $href = [{link:'https://colorsappid.netlify.app/home.html'},{link:'https://colorsappid.netlify.app/home.html'},{link:'https://moode.netlify.app/index.html'},{link:'https://github.com/tlugat/Soranime'},{link:'https://www.figma.com/proto/Cd170ESuU9iQTY2qjmyxhg/Travis-SB-Design?node-id=0%3A1'}]
-
-// // console.log($infos);
-
-// function changeContent(){
-//   if(number<4){
-//   $title.innerHTML = $infos[number].title ;
-//   $text.innerHTML = $infos[number].text;
-//   $button.style.backgroundColor= $colors[number];
-//   number++;
-//   $link.setAttribute = ("href",$href[number].link);
-//   $img.setAttribute ("src",$changepic[number].img);
-//   }
-//   else{
-//     number = 0
-//   }
-// }
-
-// function changeContent2(){
-//   if(number>0){
-//   number--;
-//   $title.innerHTML = $infos[number].title ;
-//   $text.innerHTML = $infos[number].text;
-//   $button.style.backgroundColor= $colors[number];
-//   $img.setAttribute ("src",$changepic[number].img);
-//   }
-// }
-
-// $rightArrow.addEventListener("click", changeContent);
-// $leftArrow.addEventListener("click",changeContent2)
-
 
 //Animation
 
@@ -169,10 +81,56 @@ anime({
 });
 
 anime({
-  targets: triangle,
-  rotate:10,
-  duration: 3000,
-  loop: true,
+  targets: '.content__triangle1',
+  duration: 1000,
+  translateY:1250,
   easing: 'easeInOutSine',
   direction: 'reverse',
-})
+});
+
+anime({
+  targets:'.content__triangle2',
+  duration:1200,
+  translateY:1250,
+  easing:'easeInOutSine',
+  direction:'reverse',
+});
+
+anime({
+  targets:'.content__kyle',
+  duration:1000,
+  translateX:200,
+  easing:'easeInOutSine',
+  direction:'reverse',
+  delay:1000,
+  opacity: .2,
+});
+
+anime({
+  targets:'.vertical-stroke__1',
+  rotate:90,
+  keyframes: [
+    {translateY:-150},
+    {translateY:40},
+    {translateY:400}
+  ],
+  duration:12000,
+  easing:'easeOutElastic(1, .8)',
+  loop: true,
+  
+});
+
+
+anime({
+  targets:'.vertical-stroke__2',
+  rotate:90,
+  keyframes: [
+    {translateY:150},
+    {translateY:40},
+    {translateY:-400}
+  ],
+  duration:12000,
+  easing:'easeOutElastic(1, .8)',
+  loop: true,
+  
+});

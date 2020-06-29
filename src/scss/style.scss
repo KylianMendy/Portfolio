@@ -248,6 +248,12 @@ body{
       padding-top: 2%;
       font-size: 18px;
     }
+    .about{
+      a{
+        text-decoration: none;
+        color: black;
+      }
+    }
   }
 }
 .name{
@@ -277,6 +283,26 @@ body{
   }
 }
 
+.vertical-stroke{
+  &__1{
+    position: absolute;
+    border-top: 2px solid #000;
+    width : 200px;
+    z-index: 40000;
+    top: 30%;
+    left: -5%;
+    transform: rotate(90deg);
+  }
+  &__2{
+    position: absolute;
+    border-top: 2px solid #000;
+    width : 200px;
+    z-index: 40000;
+    top: 80%;
+    left: 90%;
+    transform: rotate(90deg);
+  }
+}
 .info-project{
   display: flex;
   flex-direction: column;
