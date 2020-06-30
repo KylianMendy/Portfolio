@@ -3,6 +3,7 @@
 
 body{
   font-family: 'Raleway', sans-serif;
+  width: 100vw;
 }
 
 *{
@@ -15,11 +16,11 @@ body{
   --sliderWidth: 100vw;
   width: var(--sliderWidth);
   overflow: hidden;
-  position: relative;
 
   @media (min-width: 768px) {
     width: 100vw;
     height: 520vh;
+    position: relative;
   }
 
   &__projects{
@@ -32,7 +33,7 @@ body{
 
   &__project{
    width: var(--sliderWidth);
-   padding-left: 20%;
+   padding-left: 15%;
    padding-right: 10%;
    align-items: center;
 
@@ -181,7 +182,6 @@ body{
 
 .title{
   width: 20rem;
-  margin-top: 20%;
   margin-left: 5%;
   margin-right: auto;
   align-items: center;
@@ -189,7 +189,6 @@ body{
     display: none;
   }
   &__2{
-    margin-top: 20%;
     margin-left: 15%;
     @media (min-width: 768px) {
       display: none;
@@ -285,6 +284,9 @@ body{
 
 .vertical-stroke{
   &__1{
+    display: none;
+    @media (min-width:768px){
+    display: flex;
     position: absolute;
     border-top: 2px solid #000;
     width : 200px;
@@ -292,8 +294,13 @@ body{
     top: 30%;
     left: -5%;
     transform: rotate(90deg);
+    }
+    
   }
   &__2{
+    display: none;
+    @media (min-width:768px){
+    display: flex;
     position: absolute;
     border-top: 2px solid #000;
     width : 200px;
@@ -301,6 +308,7 @@ body{
     top: 80%;
     left: 90%;
     transform: rotate(90deg);
+    }
   }
 }
 .info-project{
@@ -394,12 +402,20 @@ body{
   width:321px;
   height: 180px;
   position: absolute;
-  top: 75%;
+  top: 72%;
   @media(min-width: 768px){
   position: relative;
   width: 1005px;
   height: 596px;
   margin-top: 10%;
+  }
+}
+
+.project__imgs{
+  display: none;
+  @media(min-width: 768px){
+    display: flex;
+    flex-direction: column;
   }
 }
 
