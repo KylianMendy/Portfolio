@@ -19,7 +19,7 @@ body{
 
   @media (min-width: 768px) {
     width: 100vw;
-    height: 200vh;
+    height: 550vh;
   }
 
   &__projects{
@@ -277,9 +277,9 @@ body{
   display: flex;
   flex-direction: column;
   @media(min-width:768px){
-    flex-direction: row;
+    width: 100vw;
     justify-content: space-around;
-    margin-bottom: 10%;
+    margin-bottom: 20%;
   }
 }
 
@@ -309,7 +309,7 @@ body{
   margin-left: 3%;
   margin-top: 40%;
   @media(min-width:768px){
-    width: 30rem;
+    width: 60vw;
     margin-top: 0%;
   }
 
@@ -323,7 +323,7 @@ body{
   &__body{
     margin-top: 10%;
     @media(min-width:768px){
-      margin-top: 5%;
+      margin-top: 2%;
       font-size: 18px;
     }
   }
@@ -397,12 +397,11 @@ body{
   top: 75%;
   @media(min-width: 768px){
   position: relative;
-  width: 600px;
-  height: 350px;
+  width: 1005px;
+  height: 596px;
+  margin-top: 10%;
   }
-  
 }
-
 
 .content{
   position:relative;
