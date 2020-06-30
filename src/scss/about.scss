@@ -1,5 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" );
 
-
+body{
+  font-family: 'Raleway', sans-serif;
+}
 .content{
   position: relative;
   width: 100vw;
@@ -21,7 +24,6 @@
 
 .text{
   width: 40rem;
-  font-family: Helvetica;
   margin-left: 5%;
   @media (min-width:768px) {
     margin-left: 20%;
@@ -33,6 +35,7 @@
     @media (min-width:768px) {
       font-size: 68px;
       margin-bottom: 3%;
+      margin-top: 20%;
     }
   }
   h2{
