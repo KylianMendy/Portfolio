@@ -4,7 +4,7 @@
 body{
   font-family: 'Raleway', sans-serif;
   width: 100vw;
-  margin-bottom: 10%;
+   margin-bottom: 10%;
 }
 
 *{
@@ -18,8 +18,11 @@ body{
   width: var(--sliderWidth);
   overflow: hidden;
   @media (min-width: 768px) {
+    height: 400vh;
+  }
+  @media (min-width: 1024px) {
     width: 100vw;
-    height: 520vh;
+    height: 540vh;
     position: relative;
   }
 
@@ -63,6 +66,9 @@ body{
       left: -5%;
       z-index: 3;
     }
+    @media (max-width:768px){
+      width: 50%;
+    }
   }
   
   &__title1--moode{
@@ -74,6 +80,9 @@ body{
     left: 0;
     z-index: 3;
     }
+    @media (max-width:768px){
+      width: 80%;
+    }
   }
   &__title1--nike{
     display: none;
@@ -83,6 +92,9 @@ body{
     top: 20%;
     left: 10%;
     z-index: 3;
+    }
+    @media (max-width:768px){
+      width: 60%;
     }
   }
   
@@ -95,6 +107,10 @@ body{
       left: 40%;
       z-index: 3;
     }
+    @media (max-width:768px){
+      width: 50%;
+      left: 35%;
+    }
   }
   &__title2--soranim{
     display: none;
@@ -105,6 +121,10 @@ body{
     top: 30%;
     left: 30%;
     }
+    @media (max-width:768px){
+      width: 60%;
+      left: 25%;
+    }
   }
   &__kyle{
     position: absolute;
@@ -114,7 +134,13 @@ body{
     width: 319px;
     height: 319px;
 
-    @media (min-width: 768px) {
+    @media (min-width:768px){
+      width: 70%;
+      height: 500px;
+      left: 0%;
+    }
+
+    @media (min-width: 1024px) {
       width: 600px;
       height: 600px;
       left: 10%;
@@ -164,6 +190,11 @@ body{
     @media (min-width: 768px) {
       display: flex;
     }
+
+     @media (max-width:768px){
+      width: 70%;
+      left: -20%;
+    }
   }
 
   &__triangle2{
@@ -173,7 +204,11 @@ body{
     top: 10%;
     @media (min-width: 768px) {
       display: flex;
-      
+    }
+
+    @media (max-width:768px){
+      width: 70%;
+      left: 30%;  
     }
   }
 }
@@ -320,6 +355,9 @@ body{
     width: 60vw;
     margin-top: 0%;
   }
+  @media(min-width:425px){
+    width: 80vw;
+  }
 
   &__title{
     @media(min-width:768px){
@@ -334,6 +372,9 @@ body{
       margin-top: 2%;
       font-size: 18px;
     }
+    @media(min-width:1024px){
+      width: 50rem;
+    }
   }
 
   &__button--colors{
@@ -344,7 +385,7 @@ body{
     border: none;
     margin-top: 5%;
     width: 200px;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
   }
 
   &__button--moode{
@@ -355,7 +396,7 @@ body{
     border: none;
     margin-top: 5%;
     width: 200px;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
   }
 
   &__button--soranim{
@@ -366,7 +407,7 @@ body{
     border: none;
     margin-top: 5%;
     width: 200px;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
   }
 
   &__button--nike{
@@ -377,7 +418,7 @@ body{
     border: none;
     margin-top: 5%;
     width: 200px;
-    margin-bottom: 20%;
+    margin-bottom: 10%;
   }
   a{
     text-decoration: none;
@@ -408,6 +449,12 @@ body{
   top: 100%;
   margin-left: -20px;
   @media(min-width: 768px){
+    width: 600px;
+    height: 336px;
+    margin-top: 10%;
+    margin-left: -20px;
+  }
+  @media(min-width: 1024px){
   position: relative;
   width: 1005px;
   height: 596px;
@@ -421,10 +468,10 @@ body{
     display: flex;
     flex-direction: column;
     margin: 3rem;
+    margin-left: 1.6rem;
   }
 }
 
 .content{
   position:relative;
-  
 }
