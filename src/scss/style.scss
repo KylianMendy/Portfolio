@@ -240,7 +240,7 @@ body{
 .arrow{
   position: absolute;
   z-index: 3000;
-  top: 70%;
+  top: 55%;
   left:5%;
   width: 16rem;
   align-items: center;
@@ -255,7 +255,12 @@ body{
     top: 95%;
     left: 45%;
   }
+  :hover{
+    width: 50px;
+  }
 }
+
+
 
 .header{
   width: 100vw;
@@ -468,7 +473,9 @@ body{
     display: flex;
     flex-direction: column;
     margin: 3rem;
-    margin-left: 1.6rem;
+    // margin-left: 1.6rem;
+    align-items: center;
+    width: 68vw;
   }
 }
 
