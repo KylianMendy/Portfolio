@@ -4,7 +4,22 @@
 body{
   font-family: 'Raleway', sans-serif;
   width: 100vw;
-   margin-bottom: 10%;
+  margin-bottom: 10%;
+  background:linear-gradient(-45deg, #FFFF, #F4F6F6, #E4EBED,#A1DBC2);
+	background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
 }
 
 *{
@@ -481,4 +496,47 @@ body{
 
 .content{
   position:relative;
+}
+
+.footer{
+  position: absolute;
+  top: 300;
+  z-index: 5;
+  display: flex;
+  width: 100vw;
+  height: 15vh;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+
+  &__text{
+    display: block;
+    justify-content: space-around;
+    width: 50vw;
+    float: left;
+    align-items: center;
+    text-align: center;
+  }
+
+  a{
+    text-decoration: none;
+    color: black;
+  }
+
+  &__img{
+    width: 50vw;
+    align-items: center;
+    padding-left: 20%;
+  }
+
+  img{
+    width: 80px;
+    height: 80px;
+  }
+}
+
+li{
+  list-style: none;
+  float: left;
+  margin-left: 2rem;
 }
