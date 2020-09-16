@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Kylian Mendy</title>
   <link rel="stylesheet" href="../scss/style.scss">
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
   <div class="header">
@@ -50,12 +51,12 @@
           <button class="info-project__button--colors" id="button"><a href="https://colorsappid.netlify.app/home.html" id="link"> Visit the web app</a></button>
           <video class="project__img" id="image" src="../videos/colors_vid.mov" autoplay loop></video>
         </div>
-        <div class="project__imgs">
-          <img class="project__img" src="../img/colors_pic1.png">
-          <img class="project__img" src="../img/colors_pic2.png">
-          <img class="project__img" src="../img/colors_pic3.png">
+          <div class="project__imgs">
+            <img data-aos="fade-in"  data-aos-delay="50" data-aos="zoom-in-up" class="project__img" src="../img/colors_pic1.png">
+            <img data-aos="fade-in"  data-aos-delay="50" data-aos="zoom-in-up" class="project__img" src="../img/colors_pic2.png">
+            <img data-aos="fade-in"  data-aos-delay="50" data-aos="zoom-in-up" class="project__img" src="../img/colors_pic3.png">
+          </div>
         </div>
-      </div>
     </div>
 
     <div class="carroussel__project"   id="" >
@@ -79,9 +80,9 @@
           <video class="project__img" id="image" src="../videos/moode_vid.mov" autoplay loop></video>
         </div>
         <div class="project__imgs">
-          <img class="project__img" src="../img/moode_pic1.png">
-          <img class="project__img" src="../img/moode_pic2.png">
-          <img class="project__img" src="../img/moode_pic3.png">
+          <img data-aos="fade-in"  data-aos-delay="50" data-aos="zoom-in-up"class="project__img" src="../img/moode_pic1.png">
+          <img data-aos="fade-in"  data-aos-delay="50" data-aos="zoom-in-up"class="project__img" src="../img/moode_pic2.png">
+          <img data-aos="fade-in"  data-aos-delay="50" data-aos="zoom-in-up"class="project__img" src="../img/moode_pic3.png">
         </div>
       </div>
     </div>
@@ -108,9 +109,9 @@
           <video class="project__img" id="image" src="../videos/soranim_vid.mov" autoplay loop></video>
         </div>
         <div class="project__imgs">
-          <img class="project__img" src="../img/soranim_pic1.png">
-          <img class="project__img" src="../img/soranim_pic2.png">
-          <img class="project__img" src="../img/soranim_pic3.png">
+          <img data-aos="fade-in"  data-aos-delay="50" data-aos="zoom-in-up"class="project__img" src="../img/soranim_pic1.png">
+          <img data-aos="fade-in"  data-aos-delay="50" data-aos="zoom-in-up"class="project__img" src="../img/soranim_pic2.png">
+          <img data-aos="fade-in"  data-aos-delay="50" data-aos="zoom-in-up"class="project__img" src="../img/soranim_pic3.png">
         </div>
       </div>
     </div>
@@ -159,9 +160,9 @@
           <video class="project__img" id="image" src="../videos/sf_vid.mov" autoplay loop></video>
         </div>
         <div class="project__imgs">
-          <img class="project__img" src="../img/streetfood_pic1.png">
-          <img class="project__img" src="../img/streetfood_pic2.png">
-          <img class="project__img" src="../img/streetfood_pic3.png">
+          <img data-aos="fade-in"  data-aos-delay="50" data-aos="zoom-in-up"class="project__img" src="../img/streetfood_pic1.png">
+          <img data-aos="fade-in"  data-aos-delay="50" data-aos="zoom-in-up"class="project__img" src="../img/streetfood_pic2.png">
+          <img data-aos="fade-in"  data-aos-delay="50" data-aos="zoom-in-up"class="project__img" src="../img/streetfood_pic3.png">
         </div>
       </div>
     </div>
@@ -188,9 +189,9 @@
           <video class="project__img" id="image" src="../videos/colors_vid.mov" autoplay loop></video>
         </div>
         <div class="project__imgs">
-          <img class="project__img" src="../img/colors_pic1.png">
-          <img class="project__img" src="../img/colors_pic2.png">
-          <img class="project__img" src="../img/colors_pic3.png">
+          <img data-aos="fade-in"  data-aos-delay="50" data-aos="zoom-in-up"class="project__img" src="../img/colors_pic1.png">
+          <img data-aos="fade-in"  data-aos-delay="50" data-aos="zoom-in-up"class="project__img" src="../img/colors_pic2.png">
+          <img data-aos="fade-in"  data-aos-delay="50" data-aos="zoom-in-up"class="project__img" src="../img/colors_pic3.png">
         </div>
       </div>
     </div>
@@ -217,8 +218,10 @@
       </ul>
     </div>
   </footer>
-  
-
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+  AOS.init();
+  </script>
 </body>
 <script src="../js/main.js"></script>
 </html>

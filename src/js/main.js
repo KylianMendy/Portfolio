@@ -1,5 +1,6 @@
 import anime from 'animejs/lib/anime.es.js';
 
+
 let position = 0;
 
 const $rightArrow = document.getElementById('arrow__right');
