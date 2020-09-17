@@ -135,4 +135,3 @@ anime({
   loop: true,
   
 });
-

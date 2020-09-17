@@ -293,6 +293,9 @@ body{
     top: 95%;
     left: 45%;
   }
+  @media (max-width: 425px) {
+    top: 70%;
+  }
   :hover{
     width: 50px;
   }
