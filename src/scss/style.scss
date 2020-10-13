@@ -35,7 +35,7 @@ body{
   @media (min-width: 768px) {
     height: 400vh;
   }
-  @media (min-width: 1024px) {
+  @media (min-width: 1024px) {  
     width: 100vw;
     height: 540vh;
     position: relative;
@@ -276,28 +276,21 @@ body{
 }
 
 .arrow{
-  position: absolute;
+  position: relative;
   z-index: 3000;
-  top: 55%;
-  left:5%;
-  width: 16rem;
+  width: 90vw;
   align-items: center;
-  margin-top: 10%;
-  margin-left: 30%;
   margin-right: auto;
+  margin-left: auto;
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
+  top: 20rem;
+
   @media (min-width: 768px) {
-    margin-top: 0;
-    margin-left: auto;
-    top: 95%;
-    left: 45%;
+    
   }
   @media (max-width: 425px) {
-    top: 70%;
-  }
-  :hover{
-    width: 50px;
+    width: 100vw;
   }
 }
 
@@ -424,47 +417,54 @@ body{
   }
 
   &__button--colors{
-    padding:8px;
+    padding:16px;
     font-size: 14px;
     color: white;
     background-color:#A1DBC2;
     border: none;
     margin-top: 5%;
     width: 200px;
-    margin-bottom: 10%;
+    margin-bottom: 8%;
+    letter-spacing: 0.5px;
+    border-radius: 2%;
   }
 
   &__button--moode{
-    padding:8px;
+    padding:16px;
     font-size: 14px;
     color: white;
     background-color:#F5D5C6;
     border: none;
     margin-top: 5%;
     width: 200px;
-    margin-bottom: 10%;
+    margin-bottom: 8%;
+    letter-spacing: 0.5px;
+    border-radius: 2%;
   }
 
   &__button--soranim{
-    padding:8px;
+    padding:16px;
     font-size: 14px;
     color: white;
     background-color:#922C44;
     border: none;
     margin-top: 5%;
     width: 200px;
-    margin-bottom: 10%;
+    margin-bottom: 8%;
+    letter-spacing: 0.5px;
+    border-radius: 2%;
   }
-
   &__button--nike{
-    padding:8px;
+    padding:16px;
     font-size: 14px;
     color: white;
     background-color:#343538;
     border: none;
     margin-top: 5%;
     width: 200px;
-    margin-bottom: 10%;
+    margin-bottom: 8%;
+    letter-spacing: 0.5px;
+    border-radius: 2%;
   }
   &__button--sf{
     padding:8px;
@@ -474,7 +474,9 @@ body{
     border: none;
     margin-top: 5%;
     width: 200px;
-    margin-bottom: 10%;
+    margin-bottom: 8%;
+    letter-spacing: 0.5px;
+    border-radius: 2%;;
   }
   a{
     text-decoration: none;
